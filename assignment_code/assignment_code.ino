@@ -36,28 +36,30 @@ class userCode {
   
   //Class variables
   public:
-    int code[4];
+    char code[4];
     int point;
 
   //Set up the variables within the class
-  void set () {
+  public void set () {
     code[0,3] = NULL;
     point = 0;
   }
 
   //Enter a new digit
-  void enterDigit (int key) {
-    code[point] = key;
+  public void enterDigit (char key) {
+    if (point < 3) {
+      code[point] = key;
+      point += 1;
+    }
   }
 
   //Clear the last digit entered
-  void clearLast () {
+  public void clearLast () {
     if (point != 0) {
       point -= 1;
       code[point] = NULL;
     }
   }
-
 };
 
 void setup() {
@@ -80,11 +82,18 @@ void setup() {
 
 
 void loop() {
+  lcd.setCursor(0,1);
+  lcd.print("Press # to clear!");
+
   char key = keypad.getKey();
 
-  if (key) {
+  if (key == "#") {
+    code.set();
+    lcd.clear();
+  } else if (key) {
     lcd.setCursor(0,0);
-    lcd.print(key);
+    code.enterDigit(key);
+    lcd.print(code.code);
     buzzer_success();
   }
 }
