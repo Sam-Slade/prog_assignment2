@@ -110,6 +110,19 @@ class userCode {
         user4 = code;
       }
     }
+    
+    //Clear user code 
+    void clearUserCode(int user) {
+      if (user == 1) {
+        user1[0,3] = NULL;
+      } else if (user == 2) {
+        user2[0,3] = NULL;
+      } else if (user == 3) {
+        user3[0,3] = NULL;
+      } else if (user == 4) {
+        user4[0,3] = NULL;
+      }
+    }
 };
 
 void setup() {
