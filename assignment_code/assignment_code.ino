@@ -36,66 +36,79 @@ LiquidCrystal lcd(9);
 
 //User input class
 class userCode {
+  /*PRIVATE VARS*/
+  //User codes
+  char user1[4];
+  char user2[4];
+  char user3[4];
+  char user4[4];
   
+  //Admin code, this is hard coded and cannot be changed
+  //during run time for security
+  char admin[4] = {1,2,3,4};
+
+  /*Public*/
   //Class variables
   public:
     char code[4];
     int point;
 
-  private:
-    //User codes
-    char user1[4];
-    char user2[4];
-    char user3[4];
-    char user4[4];
-    
-    //Admin code
-    char admin[4];
-
-  //Return the length of the code
-  public int len() {
-    return point;
-  }
-
-  //Set up the variables within the class
-  public void set () {
-    code[0,3] = NULL;
-    point = 0;
-  }
-
-  //Enter a new digit
-  public void enterDigit (char key) {
-    if (point < 3) {
-      code[point] = key;
-      point += 1;
+    //Return the length of the code
+    int len() {
+      return point;
     }
-  }
 
-  //Clear the last digit entered
-  public void clearLast () {
-    if (point != 0) {
-      point -= 1;
-      code[point] = NULL;
+    //Set up the variables within the class
+    void set () {
+      code[0,3] = NULL;
+      point = 0;
     }
-  }
 
-  //Check admin
-  public bool checkAdmin() {
-    if (code == admin) {
-      return 1;
-    } else {
-      return 0;
+    //Enter a new digit
+    void enterDigit (char key) {
+      if (point < 3) {
+        code[point] = key;
+        point += 1;
+      }
     }
-  }
 
-  //Check the code entered by the user
-  public bool checkCode() {
-    if (code == user1 || code == user2 || code == user3 || code == user4) {
-      return 1;  
-    } else {
-      return 0;
+    //Clear the last digit entered
+    void clearLast () {
+      if (point != 0) {
+        point -= 1;
+        code[point] = NULL;
+      }
     }
-  }
+
+    //Check admin
+    bool checkAdmin() {
+      if (code == admin) {
+        return 1;
+      } else {
+        return 0;
+      }
+    }
+
+    //Check the code entered by the user
+    bool checkCode() {
+      if (code == user1 || code == user2 || code == user3 || code == user4) {
+        return 1;  
+      } else {
+        return 0;
+      }
+    }
+
+    void setUserCode(int user, char code) {
+      if (user == 1) {
+        user1 = code;
+      } else if (user == 2) {
+        user2 = code;
+      } else if (user == 3) {
+        user3 = code;
+      } else if (user == 4) {
+        user4 = code;
+      }
+    }
 };
 
 void setup() {
