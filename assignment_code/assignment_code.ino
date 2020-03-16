@@ -118,6 +118,7 @@ void setup() {
 
 
 void loop() {
+  lcd.clear();
   lcd.setCursor(0,1);
   lcd.print("Press # to clear!");
 
@@ -143,6 +144,9 @@ void loop() {
       } else {
         buzzer_fail();
         code.set();
+        lcd.clear();
+        lcd.print("# Invalid Code #");
+        delay(2000);
       }
     }
   }
