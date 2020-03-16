@@ -137,6 +137,9 @@ void loop() {
       if (code.checkCode()) {
         buzzer_success();
         code.set();
+        lcd.clear();
+        lcd.print("### Welcome! ###");
+        delay(2000);
       } else {
         buzzer_fail();
         code.set();
