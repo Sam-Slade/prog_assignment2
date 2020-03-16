@@ -118,30 +118,51 @@ void setup() {
 
 
 void loop() {
+  
+  //Clear screen and set cursor to base second line
+  //Display 'clear' message
   lcd.clear();
   lcd.setCursor(0,1);
   lcd.print("Press # to clear!");
 
+  //Set cursor the top line and display message to user
+  lcd.setCursor(0,0);
+  lcd.print("Enter code: ");
+
+  //Get user input
   char key = keypad.getKey();
 
+  //If the # key is press, clear the current user input
   if (key == "#") {
+    buzzer_tap();
     code.set();
-    lcd.clear();
-
   } else if (key) {
-    lcd.setCursor(0,0);
-    lcd.print("Enter code: ");
+    //If a key is pressed
+
+    //Add the entered key to the code object
     code.enterDigit(key);
+
+    //Use the multipleChar function to display a * for each character entered
     lcd.print(multipleChar("*", code.pointer + 1));
     buzzer_tap();
+
+    //If a full code is entered, check to see if it's the admin code
     if (code.len() == 3) {
-      if (code.checkCode()) {
+      if (code.checkAdmin) {
+        buzzer_success();
+        
+      } else if (code.checkCode()) {
+        // Check to see if code entered is a user code
+        // If valid, make usccess tone and display
+        // welcome message to user
         buzzer_success();
         code.set();
         lcd.clear();
         lcd.print("### Welcome! ###");
         delay(2000);
       } else {
+        // If code is invalid, play fail tone and display
+        // invalid code message to user
         buzzer_fail();
         code.set();
         lcd.clear();
@@ -152,18 +173,21 @@ void loop() {
   }
 }
 
+// Buzzer tone for success
 void buzzer_success() {
   tone(BUZZER, 2500);
   delay(200);
   noTone(BUZZER);
 }
 
+// Buzzer tone for failure (I hear this tone a lot)
 void buzzer_fail() {
   tone(BUZZER, 450);
   delay(200);
   noTone(BUZZER);
 }
 
+// Buzzer tone for a key press
 void buzzer_tap() {
   tone(BUZZER, 2500);
   delay(10);
