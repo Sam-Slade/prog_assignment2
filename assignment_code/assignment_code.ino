@@ -125,6 +125,13 @@ class userCode {
     }
 };
 
+//Admin menu class
+class AdminMenu {
+  
+  public:
+    void mainMenu();
+}
+
 void setup() {
   Serial.begin(9600);
   //Set buzzer pin to output
@@ -177,6 +184,7 @@ void loop() {
     if (code.len() == 3) {
       if (code.checkAdmin) {
         buzzer_success();
+
         
       } else if (code.checkCode()) {
         // Check to see if code entered is a user code
@@ -229,4 +237,9 @@ char multiplyChar(char character, int multiplier) {
     outputString[i] = character;
   }
   return outputString;
+}
+
+void AdminMenu::mainMenu() {
+  lcd.clear();
+  lcd.print("1) User Codes");
 }
