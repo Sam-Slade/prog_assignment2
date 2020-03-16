@@ -4,6 +4,9 @@
 #include <SPI.h>
 #include <LiquidCrystal.h>
 
+//Hidden code input setup
+char multiplyChar(char character, int multiplier);
+
 //Servo motor setup
 const int SERVO_PIN = 2;
 Servo Servo1;
@@ -126,8 +129,9 @@ void loop() {
 
   } else if (key) {
     lcd.setCursor(0,0);
+    lcd.print("Enter code: ");
     code.enterDigit(key);
-    lcd.print(code.code);
+    lcd.print(multipleChar("*", code.pointer + 1));
     buzzer_tap();
     if (code.len() == 3) {
       if (code.checkCode()) {
@@ -157,4 +161,14 @@ void buzzer_tap() {
   tone(BUZZER, 2500);
   delay(10);
   noTone(BUZZER);
+}
+
+// Return multiple of the same character
+char multiplyChar(char character, int multiplier) {
+  char outputString[multiplier];
+
+  for (int i=0; i<multiplier; i++) {
+    outputString[i] = character;
+  }
+  return outputString;
 }
