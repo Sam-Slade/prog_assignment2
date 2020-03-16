@@ -98,6 +98,7 @@ class userCode {
       }
     }
 
+    //Set user code 
     void setUserCode(int user, char code) {
       if (user == 1) {
         user1 = code;
