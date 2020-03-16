@@ -39,6 +39,21 @@ class userCode {
     char code[4];
     int point;
 
+  private:
+    //User codes
+    char user1[4];
+    char user2[4];
+    char user3[4];
+    char user4[4];
+    
+    //Admin code
+    char admin[4];
+
+  //Return the length of the code
+  public int len() {
+    return point;
+  }
+
   //Set up the variables within the class
   public void set () {
     code[0,3] = NULL;
@@ -58,6 +73,24 @@ class userCode {
     if (point != 0) {
       point -= 1;
       code[point] = NULL;
+    }
+  }
+
+  //Check admin
+  public bool checkAdmin() {
+    if (code == admin) {
+      return 1;
+    } else {
+      return 0;
+    }
+  }
+
+  //Check the code entered by the user
+  public bool checkCode() {
+    if (code == user1 || code == user2 || code == user3 || code == user4) {
+      return 1;  
+    } else {
+      return 0;
     }
   }
 };
@@ -90,11 +123,21 @@ void loop() {
   if (key == "#") {
     code.set();
     lcd.clear();
+
   } else if (key) {
     lcd.setCursor(0,0);
     code.enterDigit(key);
     lcd.print(code.code);
-    buzzer_success();
+    buzzer_tap();
+    if (code.len() == 3) {
+      if (code.checkCode()) {
+        buzzer_success();
+        code.set();
+      } else {
+        buzzer_fail();
+        code.set();
+      }
+    }
   }
 }
 
