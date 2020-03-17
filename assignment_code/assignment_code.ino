@@ -6,6 +6,7 @@
 
 //Hidden code input setup
 char multiplyChar(char character, int multiplier);
+int numberOfHidden = 0;
 
 //Servo motor setup
 const int SERVO_PIN = 2;
@@ -60,13 +61,13 @@ class userCode {
 
     //Set up the variables within the class
     void set () {
-      code[0,3] = NULL;
+      code[0,3] = "";
       point = 0;
     }
 
     //Enter a new digit
     void enterDigit (char key) {
-      if (point < 3) {
+      if (point < 4) {
         code[point] = key;
         point += 1;
       }
@@ -101,36 +102,42 @@ class userCode {
     //Set user code 
     void setUserCode(int user, char code) {
       if (user == 1) {
-        user1 = code;
+        copyArray(user1, code);
       } else if (user == 2) {
-        user2 = code;
+        copyArray(user2, code);
       } else if (user == 3) {
-        user3 = code;
+        copyArray(user3, code);
       } else if (user == 4) {
-        user4 = code;
+        copyArray(user4, code);
       }
     }
     
     //Clear user code 
     void clearUserCode(int user) {
       if (user == 1) {
-        user1[0,3] = NULL;
+        user1[0,3] = "";
       } else if (user == 2) {
-        user2[0,3] = NULL;
+        user2[0,3] = "";
       } else if (user == 3) {
-        user3[0,3] = NULL;
+        user3[0,3] = "";
       } else if (user == 4) {
-        user4[0,3] = NULL;
+        user4[0,3] = "";
+      }
+    }
+
+    void copyArray(char array1[4], char array2[4]) {
+      for (int i=0; i<4; i++) {
+        array1[i] = array2[i];
       }
     }
 };
+userCode code;
 
 //Admin menu class
 class AdminMenu {
-  
   public:
     void mainMenu();
-}
+};
 
 void setup() {
   Serial.begin(9600);
@@ -142,12 +149,9 @@ void setup() {
   Servo1.writeMicroseconds(180);
 
   //Declare struct for user code
-  ::userCode code;
+  
   code.set();
-    
-  //Add event listener to the keypad
-  //to catch user input
-  //keypad.addEventListener(keypadEvent);
+
 }
 
 
@@ -155,14 +159,18 @@ void loop() {
   
   //Clear screen and set cursor to base second line
   //Display 'clear' message
+  delay(200);
   lcd.clear();
   lcd.setCursor(0,1);
-  lcd.print("Press # to clear!");
+  lcd.print("# to clear!");
 
   //Set cursor the top line and display message to user
   lcd.setCursor(0,0);
-  lcd.print("Enter code: ");
+  lcd.print("Enter code:");
 
+  //Display hidden chars
+  multiplyChar("*", numberOfHidden);  
+  
   //Get user input
   char key = keypad.getKey();
 
@@ -176,15 +184,17 @@ void loop() {
     //Add the entered key to the code object
     code.enterDigit(key);
 
-    //Use the multipleChar function to display a * for each character entered
-    lcd.print(multipleChar("*", code.pointer + 1));
+    //Incrament number of hidden characters
+    numberOfHidden += 1;
+    
     buzzer_tap();
 
     //If a full code is entered, check to see if it's the admin code
-    if (code.len() == 3) {
-      if (code.checkAdmin) {
+    if (code.len() == 4) {
+      numberOfHidden = 0;
+      if (code.checkAdmin()) {
         buzzer_success();
-
+        lcd.print("### Welcome! ###");
         
       } else if (code.checkCode()) {
         // Check to see if code entered is a user code
@@ -230,13 +240,10 @@ void buzzer_tap() {
 }
 
 // Return multiple of the same character
-char multiplyChar(char character, int multiplier) {
-  char outputString[multiplier];
-
+char multiplyChar(char character, int multiplier) {  
   for (int i=0; i<multiplier; i++) {
-    outputString[i] = character;
+    lcd.print(character);
   }
-  return outputString;
 }
 
 void AdminMenu::mainMenu() {
