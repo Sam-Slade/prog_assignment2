@@ -83,7 +83,13 @@ class userCode {
 
     //Check admin
     bool checkAdmin() {
-      if (code == admin) {
+      bool ad = true;
+      for (int i=0; i<4; i++){
+        if(admin[i] != code[i] && ad){
+          ad = false;
+        }
+      }
+      if (ad) {
         return 1;
       } else {
         return 0;
@@ -92,7 +98,7 @@ class userCode {
 
     //Check the code entered by the user
     bool checkCode() {
-      bool one, two, three, four, ad = true;
+      bool one, two, three, four= true;
 
       for (int i = 0; i<4; i++) {
         if(user1[i] != code[i] && one) {
@@ -110,12 +116,8 @@ class userCode {
         if(user4[i] != code[i] && four){
           four = false;
         }
-
-        if(admin[i] != code[i] && ad){
-          ad = false;
-        }
       }
-      if (one || two || three || four || ad) {
+      if (one || two || three || four) {
         return 1;
       } else {
         return 0;
