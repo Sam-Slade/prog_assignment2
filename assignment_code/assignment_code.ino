@@ -92,8 +92,31 @@ class userCode {
 
     //Check the code entered by the user
     bool checkCode() {
-      if (code == user1 || code == user2 || code == user3 || code == user4) {
-        return 1;  
+      bool one, two, three, four, ad = true;
+
+      for (int i = 0; i<4; i++) {
+        if(user1[i] != code[i] && one) {
+          one = false;
+        }
+
+        if(user2[i] != code[i] && two){
+          two = false;
+        }
+
+        if(user3[i] != code[i] && three){
+          three = false;
+        }
+
+        if(user4[i] != code[i] && four){
+          four = false;
+        }
+
+        if(admin[i] != code[i] && ad){
+          ad = false;
+        }
+      }
+      if (one || two || three || four || ad) {
+        return 1;
       } else {
         return 0;
       }
