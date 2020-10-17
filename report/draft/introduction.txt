@@ -1,0 +1,15 @@
+The product developed in this project is a home security system.
+It allows for the locking of a door with a servo motor, which can be opened with use of a key code.
+The key code can be entered on the security systems keypad.
+A small LCD is used to display messages indicating the current state of the security system, i.e. is the door locked or unlocked.
+Further feedback is given to the user by a small piezoelectric speaker and different coloured LEDs.
+These are used to communicate when buttons the keypad are pressed and when the door is locked and unlocked.
+The most important component of the entire project is the Arduino Uno board, it's the brains of the entire operation and controls the input and output of every other component used.
+The use of the Arduino also allows for multiple codes to be stored and for the codes to be edited all without the need for rebooting or reflashing of memory.
+
+During the development of the project a number of challenges were faced, some more difficult than others.
+A recurring issue that was faced was the lack of digital input and output pins (which will be referred to as I/O pins from now) on the Arduino Uno board.
+One solution to this problem would have been to move away from the Arduino Uno board to an Arduino Mega which has many more digital I/O pins allowing for the use of more components.
+However, the solution chosen to this issue was to use a 74HC595N shift register, more will be spoken about the shift register in the design section of this report.
+As well as the use of the shift register, wiring choices were carefully considered, by the end of the project the two LEDs used didn't use any of the digital I/O pins but would still light up when appropriate.
+

@@ -1,0 +1,83 @@
+\begin{document}
+  \begin{center}
+    \begin{tabular}{|p{1cm}|p{1cm}|p{3cm}|p{3cm}|p{3cm}|p{4cm}|}
+      \hline
+      \textbf{Test Reference No.} & 
+      \textbf{User Story ID} &
+      \textbf{Description of test} &
+      \textbf{Testing Process} & 
+      \textbf{Expected outcome} & 
+      \textbf{Actual outcome}\\ 
+      \hline
+
+      001 & 
+      003 &
+      The user enters a valid admin code and can edit a code. &
+      \begin{itemize}
+        \item User enters a valid admin code
+        \item User enters number of code to edit
+        \item User enters new code
+        \item User re-enters the new code
+      \end{itemize} &
+      The system accepts the new code and will then take the user back to the main ``locked'' screen. &
+      This unit test was successful. The system accepted the new code entered by the user and then took the user back to the main ``locked'' screen.\\ \hline
+
+      002 &
+      004 &
+      The user enters an invalid admin code and will be rejected by the system &
+      \begin{itemize}
+        \item User enters an invalid admin code
+      \end{itemize} &
+      The system will reject the code and provide feedback to the user. &
+      This unit test was successful. The system rejected the code and provided feedback in the form of flashing the LED and using the piezoelectric speaker.\\ \hline
+    \end{tabular}
+
+    \newpage
+
+    \begin{tabular}{|p{1cm}|p{1cm}|p{3cm}|p{3cm}|p{3cm}|p{4cm}|}
+      \hline
+      \textbf{Test Reference No.} & 
+      \textbf{User Story ID} &
+      \textbf{Description of test} &
+      \textbf{Testing Process} & 
+      \textbf{Expected outcome} & 
+      \textbf{Actual outcome}\\ 
+      \hline
+
+      003 &
+      001 &
+      The user enters a valid code to open the door using the servo. &
+      \begin{itemize}
+        \item User performs test 001 to create a valid code
+        \item User enters the valid code
+      \end{itemize} &
+      When the valid code is entered the servo will open and then close. &
+      This unit test was successful. Test 001 was done successfully. The code created was then accepted by the system when entered by the user. The servo opened and then closed, accompanied by feedback from the green LED.\\\hline
+
+      004 & 
+      002 &
+      The user enters an invalid code and the system will reject the code. & 
+      \begin{itemize}
+        \item User performs test 001 to create a valid code
+        \item User enters an invalid code
+      \end{itemize} &
+      When the user enters the invalid code, the system rejects the code &
+      This unit test was successful. Test 001 was done successfully. The invalid code was entered and the system rejected it and gave feedback with the red lED and piezoelectric speaker.\\ \hline
+
+      005 &
+      005 &
+      The user receives feedback from the system &
+      \begin{itemize}
+        \item The user presses buttons on the keypad, producing a tone from the piezoelectric speaker
+        \item The user performs test 001 and creates a valid code
+        \item The user enters the valid code, getting feedback
+        \item The user enters an invalid code, getting feedback
+      \end{itemize} &
+      When the use presses a button, the speaker will beep quickly and the red LED will flash quickly as feedback to the user. When a valid code is entered the green LED will flash and a message will be displayed on the LCD.
+      When an invalid code is entered, the red LED will flash and a message will be displayed. & 
+      This unit test was successful. When the user presses a button on the keypad, the system provides feedback with a small beep from the piezoelectric speaker and a small flash from the red LED.\\ \hline
+
+
+    \end{tabular} \\
+  \end{center}
+\end{document}

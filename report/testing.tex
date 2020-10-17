@@ -1,0 +1,16 @@
+\begin{document}
+  The testing process for the product began with the writing of user stories.
+  The user stories can be found in Appendix \ref{user stories}, these detail the criteria that the product should meet to be feature complete.
+  From the user stories, a set of unit tests were developed.
+  The unit tests can be found in Appendix \ref{test suites}.
+The first unit test 001, concerns the admin menu, for this function to succeed the system needs to identify the admin code correctly and then take the users input for the new codes and store them correctly.
+This test covers a large portion of the code base, including the feedback functions and the logic inside the \verb|admin_menu| function.
+Unit test 002, is then making sure that the user cannot enter an invalid admin code and gain access to the admin menu, this again tests the systems logic to make sure the code is checked properly.
+Test 003 and 004 move to check the user codes which open the door but don't allow access to the admin menu.
+Test 003, checks to see if a valid code works and so covers code validation as well as checks to see if the servo motor functions properly.
+Test 004 then makes sure that an invalid code cannot be used.
+Test 005, will have been partially tested by the other unit tests but tests the systems feedback to the user from pressing buttons on the keypad.
+These unit tests cover the main cases for using the system and checks nearly the entire code base.
+There maybe edge cases which haven't been considered which is why there is hesitance to commit to all of the code being fully checked.
+However, each key area of function has been unit tested individually and all have succeeded.
+\end{document}

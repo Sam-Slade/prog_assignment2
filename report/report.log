@@ -1,0 +1,1032 @@
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Arch Linux) (preloaded format=pdflatex 2020.4.8)  4 MAY 2020 21:47
+entering extended mode
+ restricted \write18 enabled.
+ %&-line parsing enabled.
+**report.tex
+(./report.tex
+LaTeX2e <2019-10-01> patch level 1
+(/usr/share/texmf-dist/tex/latex/base/article.cls
+Document Class: article 2019/08/27 v1.4j Standard LaTeX document class
+(/usr/share/texmf-dist/tex/latex/base/size10.clo
+File: size10.clo 2019/08/27 v1.4j Standard LaTeX file (size option)
+)
+\c@part=\count80
+\c@section=\count81
+\c@subsection=\count82
+\c@subsubsection=\count83
+\c@paragraph=\count84
+\c@subparagraph=\count85
+\c@figure=\count86
+\c@table=\count87
+\abovecaptionskip=\skip41
+\belowcaptionskip=\skip42
+\bibindent=\dimen102
+)
+(/usr/share/texmf-dist/tex/latex/titlesec/titlesec.sty
+Package: titlesec 2019/10/16 v2.13 Sectioning titles
+\ttl@box=\box27
+\beforetitleunit=\skip43
+\aftertitleunit=\skip44
+\ttl@plus=\dimen103
+\ttl@minus=\dimen104
+\ttl@toksa=\toks14
+\titlewidth=\dimen105
+\titlewidthlast=\dimen106
+\titlewidthfirst=\dimen107
+)
+(/usr/share/texmf-dist/tex/latex/titling/titling.sty
+Package: titling 2009/09/04 v2.1d maketitle typesetting
+\thanksmarkwidth=\skip45
+\thanksmargin=\skip46
+\droptitle=\skip47
+)
+(/usr/share/texmf-dist/tex/latex/geometry/geometry.sty
+Package: geometry 2018/04/16 v5.8 Page Geometry
+
+(/usr/share/texmf-dist/tex/latex/graphics/keyval.sty
+Package: keyval 2014/10/28 v1.15 key=value parser (DPC)
+\KV@toks@=\toks15
+)
+(/usr/share/texmf-dist/tex/generic/oberdiek/ifpdf.sty
+Package: ifpdf 2018/09/07 v3.3 Provides the ifpdf switch
+)
+(/usr/share/texmf-dist/tex/generic/oberdiek/ifvtex.sty
+Package: ifvtex 2016/05/16 v1.6 Detect VTeX and its facilities (HO)
+Package ifvtex Info: VTeX not detected.
+)
+(/usr/share/texmf-dist/tex/generic/ifxetex/ifxetex.sty
+Package: ifxetex 2010/09/12 v0.6 Provides ifxetex conditional
+)
+\Gm@cnth=\count88
+\Gm@cntv=\count89
+\c@Gm@tempcnt=\count90
+\Gm@bindingoffset=\dimen108
+\Gm@wd@mp=\dimen109
+\Gm@odd@mp=\dimen110
+\Gm@even@mp=\dimen111
+\Gm@layoutwidth=\dimen112
+\Gm@layoutheight=\dimen113
+\Gm@layouthoffset=\dimen114
+\Gm@layoutvoffset=\dimen115
+\Gm@dimlist=\toks16
+)
+(/usr/share/texmf-dist/tex/latex/biblatex/biblatex.sty
+Package: biblatex 2019/08/31 v3.13a programmable bibliographies (PK/MW)
+
+(/usr/share/texmf-dist/tex/generic/oberdiek/pdftexcmds.sty
+Package: pdftexcmds 2019/07/25 v0.30 Utility functions of pdfTeX for LuaTeX (HO
+)
+
+(/usr/share/texmf-dist/tex/generic/oberdiek/infwarerr.sty
+Package: infwarerr 2016/05/16 v1.4 Providing info/warning/error messages (HO)
+)
+(/usr/share/texmf-dist/tex/generic/oberdiek/ifluatex.sty
+Package: ifluatex 2016/05/16 v1.4 Provides the ifluatex switch (HO)
+Package ifluatex Info: LuaTeX not detected.
+)
+(/usr/share/texmf-dist/tex/generic/oberdiek/ltxcmds.sty
+Package: ltxcmds 2016/05/16 v1.23 LaTeX kernel commands for general use (HO)
+)
+Package pdftexcmds Info: LuaTeX not detected.
+Package pdftexcmds Info: \pdf@primitive is available.
+Package pdftexcmds Info: \pdf@ifprimitive is available.
+Package pdftexcmds Info: \pdfdraftmode found.
+)
+(/usr/share/texmf-dist/tex/latex/etoolbox/etoolbox.sty
+Package: etoolbox 2019/09/21 v2.5h e-TeX tools for LaTeX (JAW)
+\etb@tempcnta=\count91
+)
+(/usr/share/texmf-dist/tex/latex/oberdiek/kvoptions.sty
+Package: kvoptions 2016/05/16 v3.12 Key value format for package options (HO)
+
+(/usr/share/texmf-dist/tex/generic/oberdiek/kvsetkeys.sty
+Package: kvsetkeys 2016/05/16 v1.17 Key value parser (HO)
+
+(/usr/share/texmf-dist/tex/generic/oberdiek/etexcmds.sty
+Package: etexcmds 2016/05/16 v1.6 Avoid name clashes with e-TeX commands (HO)
+)))
+(/usr/share/texmf-dist/tex/latex/logreq/logreq.sty
+Package: logreq 2010/08/04 v1.0 xml request logger
+\lrq@indent=\count92
+
+(/usr/share/texmf-dist/tex/latex/logreq/logreq.def
+File: logreq.def 2010/08/04 v1.0 logreq spec v1.0
+))
+(/usr/share/texmf-dist/tex/latex/base/ifthen.sty
+Package: ifthen 2014/09/29 v1.1c Standard LaTeX ifthen package (DPC)
+)
+(/usr/share/texmf-dist/tex/latex/url/url.sty
+\Urlmuskip=\muskip10
+Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
+)
+\c@tabx@nest=\count93
+\c@listtotal=\count94
+\c@listcount=\count95
+\c@liststart=\count96
+\c@liststop=\count97
+\c@citecount=\count98
+\c@citetotal=\count99
+\c@multicitecount=\count100
+\c@multicitetotal=\count101
+\c@instcount=\count102
+\c@maxnames=\count103
+\c@minnames=\count104
+\c@maxitems=\count105
+\c@minitems=\count106
+\c@citecounter=\count107
+\c@maxcitecounter=\count108
+\c@savedcitecounter=\count109
+\c@uniquelist=\count110
+\c@uniquename=\count111
+\c@refsection=\count112
+\c@refsegment=\count113
+\c@maxextratitle=\count114
+\c@maxextratitleyear=\count115
+\c@maxextraname=\count116
+\c@maxextradate=\count117
+\c@maxextraalpha=\count118
+\c@abbrvpenalty=\count119
+\c@highnamepenalty=\count120
+\c@lownamepenalty=\count121
+\c@maxparens=\count122
+\c@parenlevel=\count123
+\blx@tempcnta=\count124
+\blx@tempcntb=\count125
+\blx@tempcntc=\count126
+\blx@maxsection=\count127
+\blx@maxsegment@0=\count128
+\blx@notetype=\count129
+\blx@parenlevel@text=\count130
+\blx@parenlevel@foot=\count131
+\blx@sectionciteorder@0=\count132
+\blx@entrysetcounter=\count133
+\labelnumberwidth=\skip48
+\labelalphawidth=\skip49
+\biblabelsep=\skip50
+\bibitemsep=\skip51
+\bibnamesep=\skip52
+\bibinitsep=\skip53
+\bibparsep=\skip54
+\bibhang=\skip55
+\blx@bcfin=\read1
+\blx@bcfout=\write3
+\blx@langwohyphens=\language85
+\c@mincomprange=\count134
+\c@maxcomprange=\count135
+\c@mincompwidth=\count136
+Package biblatex Info: Trying to load biblatex default data model...
+Package biblatex Info: ... file 'blx-dm.def' found.
+
+(/usr/share/texmf-dist/tex/latex/biblatex/blx-dm.def
+File: blx-dm.def 2019/08/31 v3.13a biblatex localization (PK/MW)
+)
+Package biblatex Info: Trying to load biblatex style data model...
+Package biblatex Info: ... file 'authoryear.dbx' not found.
+Package biblatex Info: Trying to load biblatex custom data model...
+Package biblatex Info: ... file 'biblatex-dm.cfg' not found.
+\c@afterword=\count137
+\c@savedafterword=\count138
+\c@annotator=\count139
+\c@savedannotator=\count140
+\c@author=\count141
+\c@savedauthor=\count142
+\c@bookauthor=\count143
+\c@savedbookauthor=\count144
+\c@commentator=\count145
+\c@savedcommentator=\count146
+\c@editor=\count147
+\c@savededitor=\count148
+\c@editora=\count149
+\c@savededitora=\count150
+\c@editorb=\count151
+\c@savededitorb=\count152
+\c@editorc=\count153
+\c@savededitorc=\count154
+\c@foreword=\count155
+\c@savedforeword=\count156
+\c@holder=\count157
+\c@savedholder=\count158
+\c@introduction=\count159
+\c@savedintroduction=\count160
+\c@namea=\count161
+\c@savednamea=\count162
+\c@nameb=\count163
+\c@savednameb=\count164
+\c@namec=\count165
+\c@savednamec=\count166
+\c@translator=\count167
+\c@savedtranslator=\count168
+\c@shortauthor=\count169
+\c@savedshortauthor=\count170
+\c@shorteditor=\count171
+\c@savedshorteditor=\count172
+\c@labelname=\count173
+\c@savedlabelname=\count174
+\c@institution=\count175
+\c@savedinstitution=\count176
+\c@lista=\count177
+\c@savedlista=\count178
+\c@listb=\count179
+\c@savedlistb=\count180
+\c@listc=\count181
+\c@savedlistc=\count182
+\c@listd=\count183
+\c@savedlistd=\count184
+\c@liste=\count185
+\c@savedliste=\count186
+\c@listf=\count187
+\c@savedlistf=\count188
+\c@location=\count189
+\c@savedlocation=\count190
+\c@organization=\count191
+\c@savedorganization=\count192
+\c@origlocation=\count193
+\c@savedoriglocation=\count194
+\c@origpublisher=\count195
+\c@savedorigpublisher=\count196
+\c@publisher=\count197
+\c@savedpublisher=\count198
+\c@language=\count199
+\c@savedlanguage=\count266
+\c@origlanguage=\count267
+\c@savedoriglanguage=\count268
+\c@pageref=\count269
+\c@savedpageref=\count270
+\shorthandwidth=\skip56
+\shortjournalwidth=\skip57
+\shortserieswidth=\skip58
+\shorttitlewidth=\skip59
+\shortauthorwidth=\skip60
+\shorteditorwidth=\skip61
+\locallabelnumberwidth=\skip62
+\locallabelalphawidth=\skip63
+\localshorthandwidth=\skip64
+\localshortjournalwidth=\skip65
+\localshortserieswidth=\skip66
+\localshorttitlewidth=\skip67
+\localshortauthorwidth=\skip68
+\localshorteditorwidth=\skip69
+Package biblatex Info: Trying to load compatibility code...
+Package biblatex Info: ... file 'blx-compat.def' found.
+
+(/usr/share/texmf-dist/tex/latex/biblatex/blx-compat.def
+File: blx-compat.def 2019/08/31 v3.13a biblatex compatibility (PK/MW)
+)
+Package biblatex Info: Trying to load BibTeX backend compatibility...
+Package biblatex Info: ... file 'blx-bibtex.def' found.
+
+(/usr/share/texmf-dist/tex/latex/biblatex/blx-bibtex.def
+File: blx-bibtex.def 2019/08/31 v3.13a biblatex compatibility (PK/MW)
+
+
+Package biblatex Warning: Using fall-back BibTeX(8) backend:
+(biblatex)                functionality may be reduced/unavailable.
+
+)
+Package biblatex Info: Trying to load generic definitions...
+Package biblatex Info: ... file 'biblatex.def' found.
+ (/usr/share/texmf-dist/tex/latex/biblatex/biblatex.def
+File: biblatex.def 2019/08/31 v3.13a biblatex compatibility (PK/MW)
+\c@textcitecount=\count271
+\c@textcitetotal=\count272
+\c@textcitemaxnames=\count273
+\c@biburlbigbreakpenalty=\count274
+\c@biburlbreakpenalty=\count275
+\c@biburlnumpenalty=\count276
+\c@biburlucpenalty=\count277
+\c@biburllcpenalty=\count278
+\biburlbigskip=\muskip11
+\biburlnumskip=\muskip12
+\biburlucskip=\muskip13
+\biburllcskip=\muskip14
+\c@smartand=\count279
+)
+Package biblatex Info: Trying to load natbib compatibility...
+Package biblatex Info: ... file 'blx-natbib.def' found.
+
+(/usr/share/texmf-dist/tex/latex/biblatex/blx-natbib.def
+File: blx-natbib.def 2019/08/31 v3.13a biblatex compatibility (PK/MW)
+Package biblatex Info: Delimiter 'nameyeardelim' in context '' already defined,
+ overwriting.
+)
+Package biblatex Info: Trying to load bibliography style 'authoryear'...
+Package biblatex Info: ... file 'authoryear.bbx' found.
+
+(/usr/share/texmf-dist/tex/latex/biblatex/bbx/authoryear.bbx
+File: authoryear.bbx 2019/08/31 v3.13a biblatex bibliography style (PK/MW)
+Package biblatex Info: Trying to load bibliography style 'standard'...
+Package biblatex Info: ... file 'standard.bbx' found.
+
+(/usr/share/texmf-dist/tex/latex/biblatex/bbx/standard.bbx
+File: standard.bbx 2019/08/31 v3.13a biblatex bibliography style (PK/MW)
+\c@bbx:relatedcount=\count280
+\c@bbx:relatedtotal=\count281
+))
+Package biblatex Info: Trying to load citation style 'authoryear'...
+Package biblatex Info: ... file 'authoryear.cbx' found.
+
+(/usr/share/texmf-dist/tex/latex/biblatex/cbx/authoryear.cbx
+File: authoryear.cbx 2019/08/31 v3.13a biblatex citation style (PK/MW)
+Package biblatex Info: Redefining '\cite'.
+Package biblatex Info: Redefining '\parencite'.
+Package biblatex Info: Redefining '\footcite'.
+Package biblatex Info: Redefining '\footcitetext'.
+Package biblatex Info: Redefining '\smartcite'.
+Package biblatex Info: Redefining '\textcite'.
+Package biblatex Info: Redefining '\textcites'.
+)
+Package biblatex Info: Trying to load configuration file...
+Package biblatex Info: ... file 'biblatex.cfg' found.
+
+(/usr/share/texmf-dist/tex/latex/biblatex/biblatex.cfg
+File: biblatex.cfg 
+))
+(/usr/share/texmf-dist/tex/latex/graphics/graphicx.sty
+Package: graphicx 2017/06/01 v1.1a Enhanced LaTeX Graphics (DPC,SPQR)
+
+(/usr/share/texmf-dist/tex/latex/graphics/graphics.sty
+Package: graphics 2019/10/08 v1.3c Standard LaTeX Graphics (DPC,SPQR)
+
+(/usr/share/texmf-dist/tex/latex/graphics/trig.sty
+Package: trig 2016/01/03 v1.10 sin cos tan (DPC)
+)
+(/usr/share/texmf-dist/tex/latex/graphics-cfg/graphics.cfg
+File: graphics.cfg 2016/06/04 v1.11 sample graphics configuration
+)
+Package graphics Info: Driver file: pdftex.def on input line 105.
+
+(/usr/share/texmf-dist/tex/latex/graphics-def/pdftex.def
+File: pdftex.def 2018/01/08 v1.0l Graphics/color driver for pdftex
+))
+\Gin@req@height=\dimen116
+\Gin@req@width=\dimen117
+)
+(/usr/share/texmf-dist/tex/latex/wrapfig/wrapfig.sty
+\wrapoverhang=\dimen118
+\WF@size=\dimen119
+\c@WF@wrappedlines=\count282
+\WF@box=\box28
+\WF@everypar=\toks17
+Package: wrapfig 2003/01/31  v 3.6
+)
+(/usr/share/texmf-dist/tex/latex/booktabs/booktabs.sty
+Package: booktabs 2019/10/08 v1.6180339 publication quality tables
+\heavyrulewidth=\dimen120
+\lightrulewidth=\dimen121
+\cmidrulewidth=\dimen122
+\belowrulesep=\dimen123
+\belowbottomsep=\dimen124
+\aboverulesep=\dimen125
+\abovetopsep=\dimen126
+\cmidrulesep=\dimen127
+\cmidrulekern=\dimen128
+\defaultaddspace=\dimen129
+\@cmidla=\count283
+\@cmidlb=\count284
+\@aboverulesep=\dimen130
+\@belowrulesep=\dimen131
+\@thisruleclass=\count285
+\@lastruleclass=\count286
+\@thisrulewidth=\dimen132
+)
+(/usr/share/texmf-dist/tex/latex/standalone/standalone.sty
+Package: standalone 2018/03/26 v1.3a Package to include TeX sub-files with prea
+mbles
+
+(/usr/share/texmf-dist/tex/latex/tools/shellesc.sty
+Package: shellesc 2016/06/07 v0.02b unified shell escape interface for LaTeX
+Package shellesc Info: Restricted shell escape enabled on input line 72.
+)
+(/usr/share/texmf-dist/tex/latex/xkeyval/xkeyval.sty
+Package: xkeyval 2014/12/03 v2.7a package option processing (HA)
+
+(/usr/share/texmf-dist/tex/generic/xkeyval/xkeyval.tex
+(/usr/share/texmf-dist/tex/generic/xkeyval/xkvutils.tex
+\XKV@toks=\toks18
+\XKV@tempa@toks=\toks19
+)
+\XKV@depth=\count287
+File: xkeyval.tex 2014/12/03 v2.7a key=value parser (HA)
+))
+(/usr/share/texmf-dist/tex/latex/currfile/currfile.sty
+Package: currfile 2015/04/23 v0.7c Provides the file path elements of the curre
+nt input file
+
+(/usr/share/texmf-dist/tex/latex/filehook/filehook.sty
+Package: filehook 2019/10/03 v0.6 Hooks for input files
+)
+\c@currfiledepth=\count288
+)
+(/usr/share/texmf-dist/tex/latex/gincltex/gincltex.sty
+(/usr/share/texmf-dist/tex/latex/svn-prov/svn-prov.sty
+Package: svn-prov 2010/04/24 v3.1862 Package Date/Version from SVN Keywords
+)
+Package: gincltex 2011/09/04 v0.3 Include external LaTeX files like graphics
+
+(/usr/share/texmf-dist/tex/latex/adjustbox/adjustbox.sty
+Package: adjustbox 2019/01/04 v1.2 Adjusting TeX boxes (trim, clip, ...)
+
+(/usr/share/texmf-dist/tex/latex/adjustbox/adjcalc.sty
+Package: adjcalc 2012/05/16 v1.1 Provides advanced setlength with multiple back
+-ends (calc, etex, pgfmath)
+)
+(/usr/share/texmf-dist/tex/latex/adjustbox/trimclip.sty
+Package: trimclip 2018/04/08 v1.1 Trim and clip general TeX material
+
+(/usr/share/texmf-dist/tex/latex/collectbox/collectbox.sty
+Package: collectbox 2012/05/17 v0.4b Collect macro arguments as boxes
+\collectedbox=\box29
+)
+\tc@llx=\dimen133
+\tc@lly=\dimen134
+\tc@urx=\dimen135
+\tc@ury=\dimen136
+Package trimclip Info: Using driver 'tc-pdftex.def'.
+
+(/usr/share/texmf-dist/tex/latex/adjustbox/tc-pdftex.def
+File: tc-pdftex.def 2019/01/04 v2.2 Clipping driver for pdftex
+))
+\adjbox@Width=\dimen137
+\adjbox@Height=\dimen138
+\adjbox@Depth=\dimen139
+\adjbox@Totalheight=\dimen140
+\adjbox@pwidth=\dimen141
+\adjbox@pheight=\dimen142
+\adjbox@pdepth=\dimen143
+\adjbox@ptotalheight=\dimen144
+
+(/usr/share/texmf-dist/tex/latex/ifoddpage/ifoddpage.sty
+Package: ifoddpage 2016/04/23 v1.1 Conditionals for odd/even page detection
+\c@checkoddpage=\count289
+)
+(/usr/share/texmf-dist/tex/latex/varwidth/varwidth.sty
+Package: varwidth 2009/03/30 ver 0.92;  Variable-width minipages
+\@vwid@box=\box30
+\sift@deathcycles=\count290
+\@vwid@loff=\dimen145
+\@vwid@roff=\dimen146
+))
+\gincltex@box=\box31
+)
+(/usr/share/texmf-dist/tex/latex/filemod/filemod-expmin.sty
+Package: filemod-expmin 2011/09/19 v1.2 Get and compare file modification times
+ (expandable; minimal)
+))
+(/usr/share/texmf-dist/tex/latex/listings/listings.sty
+\lst@mode=\count291
+\lst@gtempboxa=\box32
+\lst@token=\toks20
+\lst@length=\count292
+\lst@currlwidth=\dimen147
+\lst@column=\count293
+\lst@pos=\count294
+\lst@lostspace=\dimen148
+\lst@width=\dimen149
+\lst@newlines=\count295
+\lst@lineno=\count296
+\lst@maxwidth=\dimen150
+
+(/usr/share/texmf-dist/tex/latex/listings/lstmisc.sty
+File: lstmisc.sty 2019/09/10 1.8c (Carsten Heinz)
+\c@lstnumber=\count297
+\lst@skipnumbers=\count298
+\lst@framebox=\box33
+)
+(/usr/share/texmf-dist/tex/latex/listings/listings.cfg
+File: listings.cfg 2019/09/10 1.8c listings configuration
+))
+Package: listings 2019/09/10 1.8c (Carsten Heinz)
+
+(/usr/share/texmf-dist/tex/latex/graphics/color.sty
+Package: color 2016/07/10 v1.1e Standard LaTeX Color (DPC)
+
+(/usr/share/texmf-dist/tex/latex/graphics-cfg/color.cfg
+File: color.cfg 2016/01/02 v1.6 sample color configuration
+)
+Package color Info: Driver file: pdftex.def on input line 147.
+)
+Package biblatex Info: Trying to load language 'english'...
+Package biblatex Info: ... file 'english.lbx' found.
+
+(/usr/share/texmf-dist/tex/latex/biblatex/lbx/english.lbx
+File: english.lbx 2019/08/31 v3.13a biblatex localization (PK/MW)
+)
+\@quotelevel=\count299
+\@quotereset=\count300
+ (./report.aux)
+\openout1 = `report.aux'.
+
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 46.
+LaTeX Font Info:    ... okay on input line 46.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 46.
+LaTeX Font Info:    ... okay on input line 46.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 46.
+LaTeX Font Info:    ... okay on input line 46.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 46.
+LaTeX Font Info:    ... okay on input line 46.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 46.
+LaTeX Font Info:    ... okay on input line 46.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 46.
+LaTeX Font Info:    ... okay on input line 46.
+
+*geometry* driver: auto-detecting
+*geometry* detected driver: pdftex
+*geometry* verbose mode - [ preamble ] result:
+* driver: pdftex
+* paper: <default>
+* layout: <same size as paper>
+* layoutoffset:(h,v)=(0.0pt,0.0pt)
+* modes: 
+* h-part:(L,W,R)=(65.04256pt, 484.20988pt, 65.04256pt)
+* v-part:(T,H,B)=(65.04256pt, 664.88487pt, 65.04256pt)
+* \paperwidth=614.295pt
+* \paperheight=794.96999pt
+* \textwidth=484.20988pt
+* \textheight=664.88487pt
+* \oddsidemargin=-7.22743pt
+* \evensidemargin=-7.22743pt
+* \topmargin=-44.22743pt
+* \headheight=12.0pt
+* \headsep=25.0pt
+* \topskip=10.0pt
+* \footskip=30.0pt
+* \marginparwidth=65.0pt
+* \marginparsep=11.0pt
+* \columnsep=10.0pt
+* \skip\footins=9.0pt plus 4.0pt minus 2.0pt
+* \hoffset=0.0pt
+* \voffset=0.0pt
+* \mag=1000
+* \@twocolumnfalse
+* \@twosidefalse
+* \@mparswitchfalse
+* \@reversemarginfalse
+* (1in=72.27pt=25.4mm, 1cm=28.453pt)
+
+Package biblatex Info: Input encoding 'utf8' detected.
+Package biblatex Info: Automatic encoding selection.
+(biblatex)             Assuming data encoding 'utf8'.
+Package biblatex Info: Input encoding 'utf8' specified.
+Package biblatex Info: Data encoding 'utf8' specified.
+(biblatex)             No need to reencode data.
+\openout3 = `report-blx.bib'.
+
+Package biblatex Info: Trying to load bibliographic data...
+Package biblatex Info: ... file 'report.bbl' found.
+(./report.bbl)
+Package biblatex Info: Reference section=0 on input line 46.
+Package biblatex Info: Reference segment=0 on input line 46.
+ (/usr/share/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
+[Loading MPS to PDF converter (version 2006.09.02).]
+\scratchcounter=\count301
+\scratchdimen=\dimen151
+\scratchbox=\box34
+\nofMPsegments=\count302
+\nofMParguments=\count303
+\everyMPshowfont=\toks21
+\MPscratchCnt=\count304
+\MPscratchDim=\dimen152
+\MPnumerator=\count305
+\makeMPintoPDFobject=\count306
+\everyMPtoPDFconversion=\toks22
+) (/usr/share/texmf-dist/tex/latex/oberdiek/epstopdf-base.sty
+Package: epstopdf-base 2016/05/15 v2.6 Base part for package epstopdf
+
+(/usr/share/texmf-dist/tex/latex/oberdiek/grfext.sty
+Package: grfext 2016/05/16 v1.2 Manage graphics extensions (HO)
+
+(/usr/share/texmf-dist/tex/generic/oberdiek/kvdefinekeys.sty
+Package: kvdefinekeys 2016/05/16 v1.4 Define keys (HO)
+))
+Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
+38.
+Package grfext Info: Graphics extension search list:
+(grfext)             [.pdf,.png,.jpg,.mps,.jpeg,.jbig2,.jb2,.PDF,.PNG,.JPG,.JPE
+G,.JBIG2,.JB2,.eps]
+(grfext)             \AppendGraphicsExtensions on input line 456.
+
+(/usr/share/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
+File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
+e
+))
+\c@lstlisting=\count307
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <12> on input line 47.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <8> on input line 47.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <6> on input line 47.
+
+(./introduction.tex) (./design.tex
+<initial.jpg, id=1, 1075.217pt x 336.457pt>
+File: initial.jpg Graphic file (type jpg)
+<use initial.jpg>
+Package pdftex.def Info: initial.jpg  used on input line 23.
+(pdftex.def)             Requested size: 329.25917pt x 103.03252pt.
+ [1
+
+{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}]
+<final.jpg, id=11, 1023.825pt x 470.558pt>
+File: final.jpg Graphic file (type jpg)
+<use final.jpg>
+Package pdftex.def Info: final.jpg  used on input line 51.
+(pdftex.def)             Requested size: 329.25917pt x 151.32837pt.
+ [2 <./initial.jpg> <./final.jpg>]
+<labelled.jpg, id=15, 2096.58281pt x 1809.00844pt>
+File: labelled.jpg Graphic file (type jpg)
+<use labelled.jpg>
+Package pdftex.def Info: labelled.jpg  used on input line 62.
+(pdftex.def)             Requested size: 387.36938pt x 334.21967pt.
+
+(/usr/share/texmf-dist/tex/latex/listings/lstlang1.sty
+File: lstlang1.sty 2019/09/10 1.8c listings language file
+)
+(/usr/share/texmf-dist/tex/latex/listings/lstmisc.sty
+File: lstmisc.sty 2019/09/10 1.8c (Carsten Heinz)
+) (./assignment_code.ino
+[3 <./labelled.jpg>]) (./assignment_code.ino [4])) (./testing.tex) [5]
+! Misplaced alignment tab character &.
+l.61 ...tps://www.youtube.com/watch?v=eQMCCoCKMT0&
+                                                  t=6s
+? 
+(./user_guide.tex
+Underfull \hbox (badness 10000) in paragraph at lines 12--15
+
+ []
+
+) (./code.tex (./assignment_code.ino [6] [7] [8] [9] [10] [11] [12] [13]
+[14])
+! Missing $ inserted.
+<inserted text> 
+                $
+l.3 ..., caption=assignment\_code.ino]{assignment_
+                                                  code.ino}
+? 
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <7> on input line 3.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <5> on input line 3.
+! Extra }, or forgotten $.
+l.3 ...=assignment\_code.ino]{assignment_code.ino}
+                                                  
+? 
+! Missing $ inserted.
+<inserted text> 
+                $
+l.4 \end{document}
+                  
+? 
+! Missing } inserted.
+<inserted text> 
+                }
+l.4 \end{document}
+                  
+? 
+) (./user_stories.tex) (./unit_test.tex
+Underfull \hbox (badness 10000) in paragraph at lines 5--5
+[]\OT1/cmr/bx/n/10 Test
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 5--5
+\OT1/cmr/bx/n/10 Ref-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 5--5
+\OT1/cmr/bx/n/10 er-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 5--5
+\OT1/cmr/bx/n/10 ence
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 6--6
+[]\OT1/cmr/bx/n/10 User
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 6--6
+\OT1/cmr/bx/n/10 Story
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 7--7
+[]\OT1/cmr/bx/n/10 Description of
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 9--9
+[]\OT1/cmr/bx/n/10 Expected out-
+ []
+
+
+Underfull \hbox (badness 3503) in paragraph at lines 15--15
+\OT1/cmr/m/n/10 valid ad-min code
+ []
+
+LaTeX Font Info:    Trying to load font information for OMS+cmr on input line 1
+7.
+(/usr/share/texmf-dist/tex/latex/base/omscmr.fd
+File: omscmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
+)
+LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10> not available
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 17.
+
+Underfull \hbox (badness 10000) in paragraph at lines 17--18
+\OT1/cmr/m/n/10 valid ad-min
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 18--19
+[]\OT1/cmr/m/n/10 User en-ters
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 18--19
+\OT1/cmr/m/n/10 num-ber of
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 19--20
+[]\OT1/cmr/m/n/10 User en-ters
+ []
+
+
+Underfull \hbox (badness 2547) in paragraph at lines 22--22
+\OT1/cmr/m/n/10 user back to the
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 22--22
+\OT1/cmr/m/n/10 main ``locked''
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 29--30
+[]\OT1/cmr/m/n/10 User en-ters
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 29--30
+\OT1/cmr/m/n/10 an in-valid
+ []
+
+
+Underfull \hbox (badness 6859) in paragraph at lines 32--32
+\OT1/cmr/m/n/10 vided feed-back in the
+ []
+
+
+Overfull \hbox (14.5814pt too wide) in paragraph at lines 3--34
+ [] 
+ []
+
+[15]
+Underfull \hbox (badness 10000) in paragraph at lines 39--39
+[]\OT1/cmr/bx/n/10 Test
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 39--39
+\OT1/cmr/bx/n/10 Ref-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 39--39
+\OT1/cmr/bx/n/10 er-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 39--39
+\OT1/cmr/bx/n/10 ence
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 40--40
+[]\OT1/cmr/bx/n/10 User
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 40--40
+\OT1/cmr/bx/n/10 Story
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 41--41
+[]\OT1/cmr/bx/n/10 Description of
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 43--43
+[]\OT1/cmr/bx/n/10 Expected out-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 51--52
+[]\OT1/cmr/m/n/10 User per-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 51--52
+\OT1/cmr/m/n/10 forms test
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 52--53
+[]\OT1/cmr/m/n/10 User en-ters
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 54--54
+[]\OT1/cmr/m/n/10 When the valid
+ []
+
+
+Underfull \hbox (badness 2035) in paragraph at lines 59--59
+\OT1/cmr/m/n/10 sys-tem will re-ject
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 61--62
+[]\OT1/cmr/m/n/10 User per-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 61--62
+\OT1/cmr/m/n/10 forms test
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 62--63
+[]\OT1/cmr/m/n/10 User en-ters
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 62--63
+\OT1/cmr/m/n/10 an in-valid
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 64--64
+[]\OT1/cmr/m/n/10 When the user
+ []
+
+
+Underfull \hbox (badness 2689) in paragraph at lines 64--64
+\OT1/cmr/m/n/10 en-ters the in-valid
+ []
+
+
+Underfull \hbox (badness 3668) in paragraph at lines 64--64
+\OT1/cmr/m/n/10 code, the sys-tem
+ []
+
+
+Underfull \hbox (badness 1888) in paragraph at lines 65--65
+\OT1/cmr/m/n/10 cess-ful. Test 001 was
+ []
+
+
+Underfull \hbox (badness 1418) in paragraph at lines 65--65
+\OT1/cmr/m/n/10 done suc-cess-fully. The
+ []
+
+
+Underfull \hbox (badness 2856) in paragraph at lines 69--69
+[]\OT1/cmr/m/n/10 The user re-ceives
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 71--72
+[]\OT1/cmr/m/n/10 The user
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 71--72
+\OT1/cmr/m/n/10 presses but-
+ []
+
+
+Underfull \hbox (badness 3449) in paragraph at lines 71--72
+\OT1/cmr/m/n/10 tons on the
+ []
+
+
+Underfull \hbox (badness 1946) in paragraph at lines 71--72
+\OT1/cmr/m/n/10 key-pad, pro-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 71--72
+\OT1/cmr/m/n/10 from the
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 71--72
+\OT1/cmr/m/n/10 piezo-elec-tric
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 76--77
+[]\OT1/cmr/m/n/10 When the use
+ []
+
+
+Underfull \hbox (badness 3861) in paragraph at lines 76--77
+\OT1/cmr/m/n/10 presses a but-ton,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 76--77
+\OT1/cmr/m/n/10 the speaker will
+ []
+
+
+Underfull \hbox (badness 3780) in paragraph at lines 76--77
+\OT1/cmr/m/n/10 beep quickly and
+ []
+
+
+Underfull \hbox (badness 1152) in paragraph at lines 76--77
+\OT1/cmr/m/n/10 the red LED will
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 76--77
+\OT1/cmr/m/n/10 flash quickly as
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 76--77
+\OT1/cmr/m/n/10 feed-back to the
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 76--77
+\OT1/cmr/m/n/10 green LED will
+ []
+
+
+Underfull \hbox (badness 5288) in paragraph at lines 76--77
+\OT1/cmr/m/n/10 will be dis-played
+ []
+
+
+Underfull \hbox (badness 7944) in paragraph at lines 76--77
+\OT1/cmr/m/n/10 en-tered, the red
+ []
+
+
+Underfull \hbox (badness 4391) in paragraph at lines 78--78
+\OT1/cmr/m/n/10 a but-ton on the key-
+ []
+
+
+Underfull \hbox (badness 5504) in paragraph at lines 78--78
+\OT1/cmr/m/n/10 feed-back with a small
+ []
+
+
+Overfull \hbox (14.5814pt too wide) in paragraph at lines 37--81
+ [][] 
+ []
+
+) [16]
+Overfull \hbox (11.77141pt too wide) in paragraph at lines 81--82
+\OT1/cmr/m/n/10 Avail-able at: https://lastminuteengineers.com/74hc595-shift-re
+gister-arduino-tutorial/ (Ac-cessed: 4$[]$ March
+ []
+
+[17] (./report.aux)
+Package logreq Info: Writing requests to 'report.run.xml'.
+\openout1 = `report.run.xml'.
+
+ ) 
+Here is how much of TeX's memory you used:
+ 12728 strings out of 492167
+ 215860 string characters out of 6131559
+ 711498 words of memory out of 5000000
+ 16894 multiletter control sequences out of 15000+600000
+ 8875 words of font info for 32 fonts, out of 8000000 for 9000
+ 1141 hyphenation exceptions out of 8191
+ 52i,9n,77p,816b,1906s stack positions out of 5000i,500n,10000p,200000b,80000s
+</usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/share/
+texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/share/texmf-dist/fon
+ts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texmf-dist/fonts/type1/publi
+c/amsfonts/cm/cmmi7.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/c
+mr10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/
+share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/share/texmf-dis
+t/fonts/type1/public/amsfonts/cm/cmr5.pfb></usr/share/texmf-dist/fonts/type1/pu
+blic/amsfonts/cm/cmsy10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/
+cm/cmti10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb>
+</usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt9.pfb>
+Output written on report.pdf (17 pages, 4825216 bytes).
+PDF statistics:
+ 110 PDF objects out of 1000 (max. 8388607)
+ 75 compressed objects within 1 object stream
+ 0 named destinations out of 1000 (max. 500000)
+ 16 words of extra memory for PDF output out of 10000 (max. 10000000)
+

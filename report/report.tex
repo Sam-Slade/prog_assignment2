@@ -1,0 +1,83 @@
+\documentclass{article}
+
+\usepackage{titlesec}
+\usepackage{titling}
+\usepackage[margin=0.9in]{geometry}
+\usepackage[backend=bibtex, style=authoryear, natbib]{biblatex}
+\usepackage{graphicx}
+\usepackage{wrapfig}
+\usepackage{booktabs}
+\usepackage{standalone}
+\newcommand{\tabitem}{~~\llap{\textbullet}~~}
+\setlength\intextsep{0pt}
+
+\bibliography{computing_references}
+
+%Code
+\usepackage{listings}                                                                                                                     
+\usepackage{color}
+
+\definecolor{dkgreen}{rgb}{0,0.6,0}
+\definecolor{gray}{rgb}{0.5,0.5,0.5}
+\definecolor{mauve}{rgb}{0.58,0,0.82}
+
+\lstset{frame=tb,
+  aboveskip=3mm,
+  belowskip=3mm,
+  showstringspaces=false,
+  columns=flexible,
+  basicstyle={\small\ttfamily},
+  numbers=left,
+  numberstyle=\tiny\color{gray},
+  keywordstyle=\color{blue},
+  commentstyle=\color{dkgreen},
+  stringstyle=\color{mauve},
+  breaklines=true,
+  breakatwhitespace=true,
+  tabsize=3
+}
+%Title formatting
+\titleformat{\section}{\Large\bf}{}{0em}{}[\titlerule]
+
+\title{CT4021 Introduction To Programming Fundamentals\\\large Assignment 2 - A Personalized Home Security System}
+\author{Sam Slade}
+\date{}
+
+\begin{document}
+\maketitle
+
+\section*{Introduction}
+  \input{introduction}
+
+\section*{Design Of The System}
+  \input{design}
+
+\section*{Testing The System}
+  \input{testing}
+  
+\newpage
+\section*{Appendix}
+  \subsection{Evidence Video}
+    https://www.youtube.com/watch?v=eQMCCoCKMT0&t=6s
+  \subsection{User Guide}
+    \input{user_guide}
+
+  \subsection{Code} \label{code}
+    \input{code}
+
+  \subsection{User Stories} \label{user stories}
+    \input{user_stories}
+
+  \subsection{Test Suites} \label{test suites}
+    \input{unit_test}
+
+\newpage
+\section*{References}
+\begin{itemize}
+  \item Guyer, S. Helbling, C. (2016) 'Juniper: a functional reactive programming language for the Arduino', \textit{FARM 2016: Proceedings of the International Workshop on Functional Art, Music, Modelling, and Design}, 4, p8-16
+
+  \item Hernandez, J. (2016) \textit{Arduino's LiquidCrystal Library with SPI}[ONLINE]. Available at: \\https://playground.arduino.cc/Main/LiquidCrystal/ (Accessed: 16$^{th}$ February 2020)
+
+  \item lastminuteengineers (no date) \textit{How 74HC595 Shift Register work \& Interface it with Arduino}[ONLINE]. Available at: https://lastminuteengineers.com/74hc595-shift-register-arduino-tutorial/ (Accessed: 4$^{th}$ March 2020)
+\end{itemize}
+\end{document}

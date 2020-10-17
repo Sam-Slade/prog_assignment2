@@ -1,0 +1,9 @@
+User stories:
+
++ The user can enter a code and open the door
++ The user can enter an invalid code and the code will be rejected
++ The user can enter an admin code to edit the other codes
++ The user can enter a non-admin code the admin menu will not be opened
++ The user will get feedback when using the system
+
+

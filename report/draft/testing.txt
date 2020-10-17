@@ -1,0 +1,9 @@
+The testing process for the product began with the writing user stories.
+The user stories can be found in Appendix XXXX, these detail the criteria that the product should meet for the user in order for the product to be feature complete.
+From the user stories, a set of unit tests were developed.
+The unit tests can be found in Appendix XXXX.
+The unit tests, that could be tested, were repeated at the end of each sprint to make sure features weren't lost when new ones were added.
+This did lead to the identification of software faults and failures that caused the system to be unusable or granted access with an invalid code.
+Through the unit tests, these bug could be found and could be fixed in the final system.
+Most notably, unit test XXXX identified early on that the use of stack allocated arrays where causing an issue when the user saved a code.
+The code would be saved to every element in the array, overwriting all the codes, this is one of the reasons why heap allocation was chosen, to avoid this issue of misallocation of memory.

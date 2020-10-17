@@ -1,0 +1,34 @@
+\subsubsection{System diagram}
+\subsubsection{Unlocking a door using the system}
+  To unlock a door using the system, a valid \textit{user code} must be entered.
+  A \textit{user code} can be set in the admin menu, details for doing this can be found in section \ref{sec:user_guide_user}.
+  The \textit{user code} is entered using the keypad.
+  The number of digits the user has entered will be displayed on the LCD.
+  When a valid user code is entered, the LCD will display a ``SUCCESS'' message accompanied by the green LED lighting up.
+  Finally, the servo motor will move into the unlocked position.
+  After a few seconds, the servo motor will return to the locked position.
+
+\subsubsection{Opening and closing the admin menu}\label{sec:user_guide_admin}
+  To open the admin menu, the \textit{admin code} must be entered, by default the \textit{admin code} is \verb|0, 1, 2, 3|.
+  The \textit{admin code} is entered on the keypad.
+  When the valid \textit{admin code} is entered, the admin menu is then displayed on the LCD.\\
+
+  To close the admin menu, simply press 2 on the keypad.
+
+\subsubsection{Changing the default admin code}
+  To change the default \textit{admin code}, first navigate to the admin menu, details on how to do this can be found in section \ref{sec:user_guide_admin}.
+  After navigating to the admin menu, press 1 on the keypad, this will begin the process of editing a code.
+  When prompted to choose the code to edit, press 0 on the key pad to edit the \textit{admin code}.
+  Follow the prompts on the LCD by entering the new \textit{admin code}, then re-entering the \textit{admin code}.
+  After the \textit{admin code} has been entered and re-entered successfully, you will be taken back to the main screen on the LCD.
+  If an invalid code is entered, you will be asked to re-enter the number of the code to edit.
+
+\subsubsection{Adding and changing a user code}\label{sec:user_guide_user}
+  To add and change a \textit{user code}, first navigate to the admin menu, details on how to to do this can be found in the section \ref{sec:user_guide_admin}.
+  After navigating to the admin menu, press 1 on the keypad, this will begin the process of editing a code.
+  When prompted to choose the code to edit, enter a number between 1 and 9 on the keypad to edit or create the \textit{user code} assigned to that number.
+  Follow the prompts on the LCD by entering the new \textit{user code}, then re-entering the \textit{user code}.
+  After the \textit{user code} has been entered and re-entered successfully, you will be taken back to the main screen on the LCD.
+  If an invalid code is entered, you will be asked to re-enter the number of the code to edit.
+  
+

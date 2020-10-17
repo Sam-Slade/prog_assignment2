@@ -1,0 +1,59 @@
+While developing this project, an agile-like methodology was adopted.
+Each two week sprint ended with a review of what had been done towards the project and what would be done in the next sprint.
+Focus shifted from sprint to sprint but each had to produce something useable towards the final product.
+Keeping track of tasks in each sprint and between sprints was made easier with tools such as Trello which uses the Kanban system for organising tasks.
+
+In the earlier sprints, the focus was on understanding each of the components that would be used in the final product.
+As well as gain understanding, the early sprints were also used to produce code blocks that could be used in the final code build.
+
+Later sprints looked at assembling what was learnt into the final circuit.
+Figure X shows one of the first designs for the circuit taken from an early sprint, there are a number of issues in this design that will now be discussed before looking at the final design to show the changes that were made throughout the development cycle.
+This initial design shows the LCD, keypad, piezoelectric speaker and LED all wired to the Arduino Uno.
+This design didn't include the servo motor required by the design specification as there weren't enough digital I/O pins to support it.
+Other issues with this design included the use of digital pins zero and one.
+Using pins zero and one can cause an issue where, during the flashing process, the program counter becomes de-synchronised, this is caused by the tiny amount of resistance of the wires being in pins zero and one.
+The wires could be removed each time the Arduino's memory is written to but this later became more difficult as larger numbers of wires were added to the system.
+In a later version, it was decided to remove the use of pins zero and one to completely avoid this issue.
+The initial design also included only one LED, which was okay but to allow for better indication of what state the system is in, there was a need for more LEDs of different colours.
+
+The final design reached sought to correct each of these issues, Figure X shows the final design.
+The largest change from the initial design is that the LCD is no longer directly connect to the Arduino.
+Instead, the Arduino connects to a 74HC595N shift register which then connects to the LCD.
+Normally, the LCD requires seven connections to the data pins on the Arduino, using the shift register allows for the LCD to be controlled using only three digital I/O pins.
+This mean four more connections can be made to the Arduino while losing no functionality and freeing up digital I/O pins zero and one.
+The digital I/O pins used by the shift register had to be pins thirteen, eleven and nine, as these are the digital I/O pins that provide the Serial Peripheral Interface (SPI).
+SPI is a synchronous serial communication method, which the shift register requires in order to send the data correctly onto the LCD.
+Getting the shift register to work with the LCD did also take some software changes, they will be discussed in the XXXXX section.
+
+The final design also makes use of multiple LEDs which are connected to the piezoelectric speaker's and the servo motor's digital I/O pin as well.
+This means that by carefully controlling when the piezoelectric speaker is used, the red LED will light up and when the servo motor is used, the green LED will light up.
+An RGB LED was originally planned to be used, but due to a wiring error, the LED was damaged and couldn't be used in the final product.
+
+As was mentioned in the previous paragraph, the servo motor was also implemented in the final design using the extra digital I/O pins available.
+The servo motor is used to open and close the lock in the door, it is controlled by the Arduino and when the correct code is entered on the key pad, then the servo motor will open.
+The keypad, in both the initial and final design isn't fully connected.
+The right most column (containing the buttons A, B, C and D) is not connected, this is to free up even more I/O pins and because they aren't necessary to the overall functionality of the security system. 
+
+
+Mentioned previously, the initial sprints were to look at the hardware components individually and also write code that could later be used in the final design.
+Functions such as the three piezoelectric speaker functions were developed very early on.
+They provided the different tones used when the user interacts with the system, the success tone is a high pitched tone, the fail tone a lower tone and then tap is a short high pitch bleep designed to give feedback when the user enters a key on the keypad.
+
+Also spoken about previously was the use of the 74HC595N shift register to control the screen.
+This change required some other changes to be made to the code used.
+Normally, when using an LCD with the Arduino the LCD.h header file is included and that allows for the use of functions that allow the Arduino to communicate to the LCD.
+However, in this project the use of SPI was required, so the SPI.h header file had to be included as well as a modified LCD.h header file.
+This was provided by XXXX.
+The modified header file simply needed to be install into the Arduino IDE and then could be imported normally, allowing the Arduino to communicate to the LCD via the shift register.
+
+A concern when coding with such low level languages is memory allocation and memory safety.
+When developing the code for this project, emphasis was put on being conscious of data types chosen and of how how variables were handled.
+An example of this is the use of a two dimensional array used to store the codes that can unlock the security system.
+A two dimensional array was chosen as it meant juggling less variable name, made the code more readable and meant the pin codes were stored in discreet memory blocks.
+It was decided that heap allocation of the arrays that were used to store the user code was a better choice than stack allocation.
+For reasons such as to make the allocation persistent as stack allocations only last as long as the function they're inside, and to allow better control over memory usage by clearing the arrays after use to avoid memory leaks.
+
+Readability of the code is something that was mentioned previously and that was another major concern while writing this code.
+This was done through the used of writing functions that could be reused multiple times, through declaring all the function's used at the head of the file, then defining the function's at the tail of the file and the main logic in the main body of the file.
+This was to give the file structure so anyone could open the file, see all the functions used and then move straight into reading the main flow of the file.
+
